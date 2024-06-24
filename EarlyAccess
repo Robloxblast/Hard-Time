@@ -56,3 +56,71 @@ local rec = game.Workspace.Buttons["Recieve Heist Money"].Head
 me.CFrame = rec.CFrame
   	end    
 })
+
+
+local Tab = Window:MakeTab({
+	Name = "Foods",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddButton({
+	Name = "TP to Food 1",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-964.8704833984375, 2.6855571269989014, -856.3926391601562)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "TP to Food 2",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-468.61981201171875, 1.9990460872650146, -70.22295379638672)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "TP to Food 3",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-199.8148956298828, 2.7808139324188232, -100.22798156738281)
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Guns and Armors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddButton({
+	Name = "Shop 1",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-1183.093017578125, 2.0518691539764404, -460.22503662109375)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Shop 2",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-607.4363403320312, 2.0722649097442627, -87.26449584960938)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Shop 3",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-75.70721435546875, 4.050023078918457, -78.18770599365234)
+  	end    
+})
