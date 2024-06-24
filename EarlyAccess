@@ -58,6 +58,24 @@ me.CFrame = rec.CFrame
 })
 
 
+Tab:AddButton({
+	Name = "TP To Smug (Start)",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-1335.7376708984375, 2.2964396476745605, -394.1214294433594)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "TP To Smug (End)",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-458.1098327636719, 2.1198806762695312, -599.4485473632812)
+  	end    
+})
+
+
 local Tab = Window:MakeTab({
 	Name = "Foods",
 	Icon = "rbxassetid://4483345998",
