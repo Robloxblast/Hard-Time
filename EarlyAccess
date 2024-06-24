@@ -1,0 +1,58 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Hard Time Made By Blast", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+
+OrionLib:MakeNotification({
+	Name = "Notification!!!",
+	Content = "Subscribe to Robloxblast on YT",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddButton({
+    Name = "Tp To Vault",
+    Callback = function()
+        local p = game.Players.LocalPlayer.Character.HumanoidRootPart
+        local bank = game.Workspace.Ignore[whichOne.."VaultTeleport"] -- Corrected line
+        p.CFrame = bank.CFrame
+    end    
+})
+
+Tab:AddDropdown({
+    Name = "Choose Which Vault you wanna TP to",
+    Default = "Bank",
+    Options = {"Bank", "Casino", "Factory"},
+    Callback = function(Value)
+        whichOne = Value
+    end    
+})
+
+
+Tab:AddButton({
+	Name = "TP To Heist Receiver",
+	Callback = function()
+      		local me = game.Players.LocalPlayer.Character.HumanoidRootPart
+local rec = game.Workspace.Buttons["Recieve Heist Money"].Head
+me.CFrame = rec.CFrame
+  	end    
+})
